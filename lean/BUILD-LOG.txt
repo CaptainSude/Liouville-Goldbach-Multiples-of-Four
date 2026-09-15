@@ -1,0 +1,13 @@
+✔ [1199/1204] Built Shusterman.Reflection (11s)
+✔ [1200/1204] Built Shusterman.Liouville (11s)
+✔ [1201/1204] Built Shusterman.Main (7.9s)
+✔ [1202/1204] Built Shusterman (7.5s)
+ℹ [1203/1204] Built Audit (7.6s)
+info: Audit.lean:5:0: Shusterman.shusterman_multiples_of_four (hM : Shusterman.MangerelNonextremality) {N : ℕ} (hN : 0 < N) (hfour : 4 ∣ N) :
+  ∃ a b, 0 < a ∧ 0 < b ∧ a + b = N ∧ ArithmeticFunction.liouville a = -1 ∧ ArithmeticFunction.liouville b = -1
+info: Audit.lean:6:0: def Shusterman.MangerelNonextremality : Prop :=
+∀ (m : ℕ), 11 ≤ m → |∑ n ∈ Finset.Icc 1 (m - 1), Shusterman.liouville n * Shusterman.liouville (m - n)| < ↑m - 1
+info: Audit.lean:7:0: 'Shusterman.reflection_of_no_negative_pair' depends on axioms: [propext, Quot.sound]
+info: Audit.lean:8:0: 'Shusterman.MangerelNonextremality.equalPair' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:9:0: 'Shusterman.shusterman_multiples_of_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (1204 jobs).

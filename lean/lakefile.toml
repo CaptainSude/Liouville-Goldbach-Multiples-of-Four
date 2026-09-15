@@ -9,4 +9,4 @@ rev = "de2ef68216c6074f338c8e61890ee0a379ddfb9b"
 
 [[lean_lib]]
 name = "Shusterman"
-roots = ["Shusterman", "Audit"]
+roots = ["Shusterman", "Audit", "Shusterman.Extended"]
